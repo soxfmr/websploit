@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-# 
+#
 #            --------------------------------------------------
-#                            WebSploit Framework          
+#                            WebSploit Framework
 #            --------------------------------------------------
 #        Copyright (C) <2012>  <0x0ptim0us (Fardin Allahverdinazhand)>
 #
@@ -21,10 +21,10 @@
 #
 #
 #    WebSploit Advanced MITM Framework
-#    
-#    
+#
+#
 #    About Author :
-#    
+#
 #    Founder : 0x0ptim0us (Fardin Allahverdinazhand)
 #    Location : Iran - Azarbaycan
 #    Email : 0x0ptim0us@Gmail.com
@@ -35,6 +35,7 @@ import os
 import readline, rlcompleter
 from time import sleep
 from core import wcolors
+from core import ansicolor
 from core import menu
 from core import header
 from core import modules_database
@@ -155,6 +156,7 @@ def main():
         print(wcolors.color.RED + "\n[*] (Ctrl + C ) Detected, Trying To Exit ..." + wcolors.color.ENDC)
         print(wcolors.color.YELLOW + "[*] Thank You For Using Websploit Framework =)" + wcolors.color.ENDC)
 def start():
+    ansicolor.enable()
     header.main_header()
     menu.main_info()
     main()

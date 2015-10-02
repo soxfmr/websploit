@@ -8,7 +8,7 @@ import os
 import subprocess
 from core import help
 from core import wcolors
-from scapy.all import *
+# from scapy.all import *
 from time import sleep
 
 options = ["eth0", "192.168.1.1", "192.168.1.2", "192.168.1.3"]
